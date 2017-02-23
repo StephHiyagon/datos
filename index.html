@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FichaDatos</title>
+</head>
+<body>
+<h1><b>Ficha de Datos</b></h1>
+  <div align ="left">
+    <label for="nombre"><b>Nombre:</b></label>
+    <input type="text" id="nombre" ><br>
+  </div> <br>
+  <div align ="left">
+  <label for="apellido"><b>Apellido:</b></label>
+  <input type="text" id="apellido"><br>
+</div><br>
+  <div align ="left">
+  <label for="dni"><b>DNI:</b></label>
+  <input type="text" id="dni" pattern="^[0-9]\d{7}$" title="Solo 8 digitos" required><br>
+</div><br>
+  <div align ="left">
+  <label for="direccion"><b>Direccion:</b></label>
+  <input type="text" id="direccion"><br>
+</div><br>
+<div align ="left">
+  <button type="button" onclick="mostrar(); return false">Enviar datos</button>
+</div>
+<ul>
+    <li>Nombre: <label id="name"></label></li>
+    <li>Apellido: <label id="lastname"></label></li>
+    <li>DNI: <label id = "ident"></label></li>
+    <li>Dirección: <label id = "direc"></label></li>
+  </ul>
+<script src="assest/js/app.js"></script>
+</body>
+</html>
