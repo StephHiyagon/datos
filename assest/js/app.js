@@ -1,3 +1,12 @@
+function validar(){
+  var dni = document.getElementById("dni").value;
+  var caract = dni.length
+  if(caract == 8){
+    return mostrar();
+  }else{
+    return alert("Información inválida");
+  }
+}
 
 function mostrar(){
   var nombre = document.getElementById("nombre").value;
