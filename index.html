@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1><b>Ficha de Datos</b></h1>
+<form id="datitos">
   <div align ="left">
     <label for="nombre"><b>Nombre:</b></label>
     <input type="text" id="nombre" ><br>
@@ -25,8 +26,9 @@
   <input type="text" id="direccion"><br>
 </div><br>
 <div align ="left">
-  <button type="button" onclick="validar(); return false">Enviar datos</button>
+  <button type="submit" onclick="validar(); return false">Enviar datos</button>
 </div>
+</form>
 <ul>
     <li>Nombre: <label id="name"></label></li>
     <li>Apellido: <label id="lastname"></label></li>
